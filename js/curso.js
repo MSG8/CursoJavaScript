@@ -71,3 +71,49 @@ finally
 {
   console.log( "Ejecto el finally"); //Siempre muestra eso
 }
+
+
+//ARRAYS
+
+let vector = [1,2,3,4,5,6,7,8];
+let guarreria = [1,2,"NJOADFNJDF",function(){console.log("PFFFF")},true];
+let matriz =
+[
+  [1,2,3],
+  [1,2,3],
+  [1,2,3]
+];
+
+console.log(matriz[1][2]);
+
+//RECORRER UN vector
+for (let i=0; i < vector.lenght; i++)
+  console.log(vector[i]);
+
+for (let elemento of vector) //RECORRE UN VECTOR
+  console.log(elemento);
+
+for (let atributo in objeto) //VEO LOS ATRIBUTOS DE UN OBJETO
+  console.log(`El atributo ${atributo} vale ${objeto[atributo]}`);
+//  console.log(atributo);
+//  console.log("El atributo \'" + atributo + "\' vale " + objeto[atributo]);
+//SE PUEDE ESCAPAR LAS COMILLAS /''
+
+let matriz2 =
+[
+  [1,2,3],
+  [4,5,6,7,8], //[4,[5,14,65],6,7,8],
+  [9,10]
+];
+for (let fila of matriz2) // coge las array de la matriz
+{
+  for (let elemento of fila) // coge los valores de cada array
+  {
+    console.log(elemento);
+  }
+}
+
+for (let fila of matriz2) // coge las array de la matriz
+{
+  console.log(fila);
+}
